@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Cork Theme (Gulp Version)
 #### Description:
 -------------------
