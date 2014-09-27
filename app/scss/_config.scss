@@ -5,9 +5,106 @@
 // Theme Colors
 $black: #000000;
 $white: #ffffff;
+$off-white: #e7e7e7;
+$navy: #081823;
+$blue-gray: #001622;
+
+// Magentas
+$bright-magenta: #e71096;
+$magenta: #cd007b;
+$dark-magenta: #a70064;
+
+// Blues
+$bright-blue: #0052F7;
+$blue: #0041C2;
+$med-blue: #002877;
+$dark-blue: #041445;
+
+/* Type
+---------------------------------------------------------------------- */
+// Google Webfont Import
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic');
+@import url('http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic');
+
+$lato: "lato", "helvetica", arial, sans-serif;
+$crimson: "crimson text", georgia, serif;
+
 
 /* Mixins (Sorted by ALPHA)
 ---------------------------------------------------------------------- */
+// Type and Weights
+@mixin lato-light($size) {
+	
+	font-family: $lato;
+	font-weight: 300;
+	font-style: normal;
+	font-size: $size;
+	
+}
+
+@mixin lato-light-ital($size) {
+	
+	font-family: $lato;
+	font-weight: 300;
+	font-style: italic;
+	font-size: $size;
+	
+}
+
+@mixin lato-normal($size) {
+	
+	font-family: $lato;
+	font-weight: 400;
+	font-style: normal;
+	font-size: $size;
+	
+}
+
+@mixin lato-normal-ital($size) {
+	
+	font-family: $lato;
+	font-weight: 400;
+	font-style: italic;
+	font-size: $size;
+	
+}
+
+@mixin lato-bold($size) {
+	
+	font-family: $lato;
+	font-weight: 700;
+	font-style: normal;
+	font-size: $size;
+	
+}
+
+@mixin lato-bold-ital($size) {
+	
+	font-family: $lato;
+	font-weight: 700;
+	font-style: italic;
+	font-size: $size;
+	
+}
+
+@mixin crimson($size) {
+	
+	font-family: $crimson;
+	font-weight: 400;
+	font-style: normal;
+	font-size: $size;
+	
+}
+
+@mixin crimson-ital($size) {
+	
+	font-family: $crimson;
+	font-weight: 400;
+	font-style: italic;
+	font-size: $size;
+	
+}
+
 // Media Queries
 $no-mq-support: false !default;
 $no-mq-threshold: 1200px;

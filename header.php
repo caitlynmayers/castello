@@ -17,4 +17,15 @@
 		<div id="app">
 			<header>
 				<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+				
+				<nav>
+				
+					<ul class="menu">
+				
+						<?php wp_nav_menu('theme_location=primary&container=&items_wrap=%3$s'); ?>
+				
+					</ul>
+				
+				</nav>
+				
 			</header>
