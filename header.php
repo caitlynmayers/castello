@@ -69,4 +69,6 @@
 				
 				</section>
 				
+				<img class="home-pic" src="<?php bloginfo('template_directory'); ?>/img/castello.png" />
+				
 			</header>

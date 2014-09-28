@@ -6,6 +6,7 @@ header {
 	background-size: 220px;
 	overflow: auto;
 	padding-top: 2em;
+	position: relative;
 	
 	.nav-bar {
 		
@@ -35,17 +36,21 @@ header {
 					display: inline-block;
 					padding-left: 35px;
 					
+					&.current-menu-item > a {
+						
+						border-bottom: 1px solid $bright-magenta;
+						
+					}
+					
 					a {
 						
 						color: $white;
 						padding-bottom: .2em;
 						
-						@include transition (all 100ms ease-in-out);
-						
 						&:hover {
 							
 							color: $white;
-							border-bottom: 2px solid $bright-magenta;
+							border-bottom: 1px solid $bright-magenta;
 							
 						}
 						
@@ -96,6 +101,14 @@ header {
 			padding: .75em 0;
 			
 		}
+		
+	}
+	
+	.home-pic {
+		
+		bottom: 0;
+		position: absolute;
+		width: 250px;
 		
 	}
 	
