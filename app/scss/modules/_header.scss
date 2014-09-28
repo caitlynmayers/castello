@@ -1,1 +1,59 @@
-/* Theme Styles: Header
+header {
+	
+	background-color: $navy;
+	height: 415px;
+	padding-top: 2em;
+	
+	.nav-bar {
+		
+		@include outer-container;
+		
+		height: 80px;
+
+		.logo {
+			
+			float: left;
+			width: 80px;
+			
+		}
+		
+		nav {
+			
+			@include lato-normal(22px);
+			
+			float: left;
+			padding-top: 30px;
+			text-transform: uppercase;
+			
+			ul {
+				
+				li {
+					
+					display: inline-block;
+					padding-left: 35px;
+					
+					a {
+						
+						color: $white;
+						padding-bottom: .2em;
+						
+						@include transition (all 100ms ease-in-out);
+						
+						&:hover {
+							
+							color: $white;
+							border-bottom: 2px solid $bright-magenta;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
