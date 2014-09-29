@@ -14,7 +14,12 @@
 
 // Base Styles
 body {
-	background: $off-white;
+	
+	background-color: $navy;
+	background-image: url('../../img/hex.svg');
+	background-position: left top;
+	background-size: 220px;
+
 }
 
 h1 {
@@ -32,6 +37,7 @@ p {
 	
 	color: $blue-gray;
 	line-height: 1.25em;
+	padding: .75em 0;
 	
 }
 

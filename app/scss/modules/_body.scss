@@ -1,0 +1,13 @@
+#main {
+	
+	background-color: $off-white;
+	
+}
+
+.content-wrap {
+	
+	@include outer-container;
+	
+	padding: 1em 0;
+	
+}
