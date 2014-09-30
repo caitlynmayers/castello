@@ -13,6 +13,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_head(); ?>
 </head>
+<?php require_once( dirname(dirname(dirname(__FILE__))) . '/themes/castello/img/modules/global.svg'); ?>
 	<body <?php body_class(); ?>>
 		<div id="app">
 			<header>
@@ -21,7 +22,14 @@
 				
 					<a href="/" class="logo">
 						
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						<div>
+	                        <svg viewBox="0 0 213.4 213.5">
+	                            <use xlink:href="#logo-svg"></use>
+	                        </svg>
+	                    </div>
+						
+						<!--
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 viewBox="0 0 213.4 213.5" enable-background="new 0 0 213.4 213.5" xml:space="preserve">
 							<g>
 								<circle fill="#E6E7E8" cx="107" cy="107" r="106.8"/>
@@ -35,6 +43,7 @@
 								<polygon fill="#E70095" points="171.1,111.8 185.6,111.8 156.1,174.5 141.7,174.5 	"/>
 							</g>
 						</svg>
+-->
 						
 					</a>
 					
