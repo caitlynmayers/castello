@@ -16,7 +16,7 @@
 <?php require_once( dirname(dirname(dirname(__FILE__))) . '/themes/castello/img/modules/global.svg'); ?>
 	<body <?php body_class(); ?>>
 		<div id="app">
-			<header>
+			<header class="home">
 			
 				<div class="nav-bar">
 				
@@ -59,6 +59,6 @@
 				
 				</section>
 				
-				<img class="home-pic" src="<?php bloginfo('template_directory'); ?>/img/castello.png" />
+				<img class="profile" src="<?php bloginfo('template_directory'); ?>/img/castello.png" />
 				
 			</header>

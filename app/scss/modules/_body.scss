@@ -8,6 +8,13 @@
 	
 	@include outer-container;
 	
-	padding: 1em 0;
+	padding: 1em 0 2em 0;
+	
+	.content {
+		
+		@include span-columns(7);
+		@include shift(1);
+		
+	}
 	
 }

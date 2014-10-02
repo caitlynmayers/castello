@@ -1,3 +1,6 @@
+@import "modules/home-header";
+@import "modules/interior-header";
+
 header {
 	
 	overflow: auto;
@@ -90,21 +93,12 @@ header {
 			
 		}
 		
-		h1 {
-			
-			border-bottom: 1px solid $bright-magenta;
-			border-top: 1px solid $bright-magenta;
-			padding: .75em 0;
-			
-		}
-		
 	}
 	
-	.home-pic {
+	.profile {
 		
 		bottom: 0;
 		position: absolute;
-		width: 250px;
 		
 	}
 	
