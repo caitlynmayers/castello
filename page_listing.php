@@ -1,8 +1,8 @@
 <?php 
 /*
-Template Name: About Page
+Template Name: Listing Page
 */
-get_header( 'interior' ); ?>
+get_header( 'listing' ); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <?php $this_page = new Post(get_the_ID()); ?>
 <div id="main" role="main">

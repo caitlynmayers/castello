@@ -53,12 +53,10 @@
 					
 				</div>
 				
-				<section class="home">
-				
-					<h1>MD/P<span>h</span>D student, Neuroscientist, Husband, Lover of Technology (carbon & silicon-based varieties), Avid Learner, Passionate Advocate.</h1>
+				<section class="interior reversed">
+					
+					<?php the_field('masthead_text'); ?>
 				
 				</section>
-				
-				<img class="photo tall" src="<?php bloginfo('template_directory'); ?>/img/castello.png" />
 				
 			</header>

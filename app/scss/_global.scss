@@ -55,3 +55,22 @@ a {
 	}
 	
 }
+
+.reversed {
+	
+	p {
+		
+		@include lato-light(14px);
+		
+		color: $off-white;
+		letter-spacing: 1px;
+		
+		em {
+			
+			@include lato-light-ital(14px);
+			
+		}
+		
+	}
+	
+}

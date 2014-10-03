@@ -82,7 +82,6 @@ header {
 		@include span-columns(7);
 		
 		line-height: 2.4em;
-		padding: 2em 2.75em 3.5em 2em;
 		
 		span {
 			
@@ -92,17 +91,29 @@ header {
 		
 	}
 	
-	.profile {
+	.photo {
 		
 		bottom: 0;
 		position: absolute;
-		width: 250px;
+		
+	}
+	
+	.tall {
+			
+			width: 250px;
+		}
+		
+	.short {
+		
+		width: 200px;
 		
 	}
 	
 	.home {
 		
 		@extend .masthead;
+		
+		padding: 2em 2.75em 3.5em 2em;
 		
 		h1 {
 			
@@ -117,6 +128,8 @@ header {
 	.interior {
 		
 		@extend .masthead;
+		
+		padding: 2em 2.75em 2.5em 2em;
 		
 		h1 {
 		

@@ -5,12 +5,8 @@ footer {
 	padding: 1em 0;
 	
 	p {
-		
-		@include lato-light(14px);
+	
 		@include span-columns(4);
-		
-		color: $off-white;
-		letter-spacing: 1px;
 		
 	}
 	

@@ -1,4 +1,4 @@
-		<footer>
+		<footer class="reversed">
 			<p>&copy; <?php echo copyright(2014); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
 		</footer>
 	</div><!-- END: #app -->

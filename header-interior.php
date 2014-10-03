@@ -54,11 +54,11 @@
 				</div>
 				
 				<section class="interior">
-				
-					<h1>My Name is Michael Castello. <br />I do a lot of things.</h1>
+					
+					<?php the_field('masthead_text'); ?>
 				
 				</section>
 				
-				<img class="profile" src="<?php bloginfo('template_directory'); ?>/img/castello.png" />
+				<img class="photo short" src="<?php bloginfo('template_directory'); ?>/img/castello-trim.png" />
 				
 			</header>
