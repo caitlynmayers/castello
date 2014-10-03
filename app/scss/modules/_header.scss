@@ -1,6 +1,3 @@
-@import "modules/home-header";
-@import "modules/interior-header";
-
 header {
 	
 	overflow: auto;
@@ -99,6 +96,33 @@ header {
 		
 		bottom: 0;
 		position: absolute;
+		width: 250px;
+		
+	}
+	
+	.home {
+		
+		@extend .masthead;
+		
+		h1 {
+			
+			border-bottom: 1px solid $bright-magenta;
+			border-top: 1px solid $bright-magenta;
+			padding: .75em 0;
+			
+		}
+		
+	}
+	
+	.interior {
+		
+		@extend .masthead;
+		
+		h1 {
+		
+			font-size: 30px;
+			
+		}
 		
 	}
 	

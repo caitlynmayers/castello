@@ -16,7 +16,7 @@
 <?php require_once( dirname(dirname(dirname(__FILE__))) . '/themes/castello/img/modules/global.svg'); ?>
 	<body <?php body_class(); ?>>
 		<div id="app">
-			<header class="about">
+			<header>
 			
 				<div class="nav-bar">
 				
@@ -53,7 +53,7 @@
 					
 				</div>
 				
-				<section class="masthead">
+				<section class="interior">
 				
 					<h1>My Name is Michael Castello. <br />I do a lot of things.</h1>
 				

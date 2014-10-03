@@ -16,7 +16,7 @@
 <?php require_once( dirname(dirname(dirname(__FILE__))) . '/themes/castello/img/modules/global.svg'); ?>
 	<body <?php body_class(); ?>>
 		<div id="app">
-			<header class="home">
+			<header>
 			
 				<div class="nav-bar">
 				
@@ -53,7 +53,7 @@
 					
 				</div>
 				
-				<section class="masthead">
+				<section class="home">
 				
 					<h1>MD/P<span>h</span>D student, Neuroscientist, Husband, Lover of Technology (carbon & silicon-based varieties), Avid Learner, Passionate Advocate.</h1>
 				
