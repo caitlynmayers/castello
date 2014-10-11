@@ -22,12 +22,59 @@ body {
 
 }
 
+h2, h3, h4, h5, h6 {
+	
+	padding-top: .25em;
+	
+}
+
 h1 {
 	
 	@include lato-bold(35px);
 	
 	color: $white;
 	text-transform: uppercase;
+	
+}
+
+h2 {
+	
+	@include lato-bold(28px);
+	
+	color: $magenta;
+	padding-top: .5em;
+	
+}
+
+h3 {
+	
+	@include lato-bold(25px);
+	
+	color: $true-blue;
+	
+}
+
+h4 {
+	
+	@include lato-light(20px);
+	
+	color: $magenta;
+	
+}
+
+h5 {
+	
+	@include lato-light(18px);
+	
+	color: $med-blue;
+	
+}
+
+h6 {
+	
+	@include lato-light-ital(16px);
+	
+	color: $true-blue;
 	
 }
 

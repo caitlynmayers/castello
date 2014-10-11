@@ -1,6 +1,6 @@
 <aside role="sidebar" class="sidebar">
 	<div class="link">
-		<a href="<?php echo the_field('link'); ?>"><h4><?php the_field('link_text'); ?></h4></a>
+		<a href="<?php echo the_field('link'); ?>"><h5><?php the_field('link_text'); ?></h5></a>
 	</div>
 	<div class="social">
 		<div class="icon">
