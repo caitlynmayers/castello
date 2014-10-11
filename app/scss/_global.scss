@@ -103,6 +103,26 @@ a {
 	
 }
 
+blockquote {
+
+	border-left: 1px solid $bright-magenta;
+	margin: .75em 0;
+	padding: .5em 0 .75em 0;
+
+	p {
+		
+		@include lato-normal-ital(30px);
+		
+		color: $true-blue;
+		display: block;
+		line-height: 1.35em;	
+		margin-left: 1em;
+		padding: 0;
+		
+	}
+	
+}
+
 .reversed {
 	
 	p {
