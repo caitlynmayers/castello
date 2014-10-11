@@ -53,7 +53,7 @@
 					
 				</div>
 				
-				<section class="interior">
+				<section class="interior reversed">
 					
 					<?php the_field('masthead_text'); ?>
 				

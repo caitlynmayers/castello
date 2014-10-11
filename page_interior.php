@@ -10,6 +10,7 @@ get_header( 'interior' ); ?>
 		<article class="content">
 			<?php the_content(); ?>
 		</article>
+		<?php get_sidebar(); ?>
 	</div>
 </div>
 <?php endwhile; endif; ?>

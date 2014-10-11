@@ -1,0 +1,61 @@
+.sidebar {
+
+	@include span-columns(3);
+	
+	.link {
+
+		@include lato-normal(18px);
+		
+		border-bottom: 1px solid #b7b7b7;
+		border-top: 1px solid #b7b7b7;
+		margin-top: 1em;
+		padding: 1em 0;
+		
+		a {
+			
+			color: $blue;
+			text-transform: uppercase;
+			
+			&:hover {
+				
+				color: $bright-blue;
+				
+			}
+			
+			h4 {
+				
+				margin-left: 2em;
+				
+				&:after {
+				
+					@include lato-normal(28px);
+				
+					content:">";
+					line-height: .65em;
+					padding-left: 3.5em;
+					position: absolute;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	.social {
+		
+		margin-left: 1.5em;
+		padding-top: 2em;
+		
+		.icon {
+			
+			float: left;
+			width: 60px;
+			margin: 0 .75em;
+			
+		}
+		
+	}	
+	
+}
