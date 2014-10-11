@@ -103,6 +103,41 @@ a {
 	
 }
 
+strong {
+	
+	@include lato-bold(16px);
+	
+	color: $blue-gray;
+	
+}
+
+em {
+	
+	@include crimson-ital(18px);
+	
+}
+
+ul {
+	
+	list-style-type: circle;
+	
+}
+
+ol {
+	
+	list-style-type: decimal;
+	
+}
+
+li {
+		
+	@include crimson(18px);
+
+	line-height: 1.5em;
+	margin-left: 1.25em;
+	
+}
+
 blockquote {
 
 	border-left: 1px solid $bright-magenta;
