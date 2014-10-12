@@ -8,12 +8,36 @@
 	
 	@include outer-container;
 	
-	padding: 1em 0 2em 0;
+	padding: 1em 0 1em 0;
 	
 	.content {
 		
 		@include span-columns(7);
 		@include shift(1);
+		
+		padding: .5em 0 .75em 0;
+		
+	}
+	
+	
+	ul {
+		
+		list-style-type: circle;
+		
+	}
+	
+	ol {
+		
+		list-style-type: decimal;
+		
+	}
+	
+	li {
+			
+		@include crimson(18px);
+	
+		line-height: 1.5em;
+		margin-left: 1.25em;
 		
 	}
 	

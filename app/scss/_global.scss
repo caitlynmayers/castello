@@ -51,6 +51,7 @@ h3 {
 	@include lato-bold(25px);
 	
 	color: $true-blue;
+	padding: .25em 0;
 	
 }
 
@@ -67,6 +68,7 @@ h5 {
 	@include lato-light(18px);
 	
 	color: $med-blue;
+	line-height: 1.25em;
 	
 }
 
@@ -75,6 +77,7 @@ h6 {
 	@include lato-light-ital(16px);
 	
 	color: $true-blue;
+	line-height: 1.25em;
 	
 }
 
@@ -84,7 +87,7 @@ p {
 	
 	color: $blue-gray;
 	line-height: 1.5em;
-	padding: .75em 0;
+	padding: .5em 0 1.25em 0;
 	
 }
 
@@ -114,27 +117,6 @@ strong {
 em {
 	
 	@include crimson-ital(18px);
-	
-}
-
-ul {
-	
-	list-style-type: circle;
-	
-}
-
-ol {
-	
-	list-style-type: decimal;
-	
-}
-
-li {
-		
-	@include crimson(18px);
-
-	line-height: 1.5em;
-	margin-left: 1.25em;
 	
 }
 
