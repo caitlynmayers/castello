@@ -46,7 +46,7 @@ function post_type_init($settings) {
 		'menu_icon' 			=> 		(!empty($settings['menu_icon']) ? $settings['menu_icon'] : 'dashicons-admin-post'),
 		'rewrite' 				=>  	(!empty($settings['rewrite']) ? $settings['rewrite'] : array('slug' => '', 'with_front' => false)),
 		'supports' 				=> 		(!empty($settings['supports']) ? $settings['supports'] : array('title', 'editor', 'thumbnail', 'revisions', 'page-attributes')),
-		'taxonomies' 			=> 		(!empty($settings['taxonomies']) ? $settings['taxonomies'] : array('type', 'post_tag'))
+		'taxonomies' 			=> 		(!empty($settings['taxonomies']) ? $settings['taxonomies'] : array('type', 'post_tag', 'category'))
 	);
 	register_post_type($settings['slug'], $args);
 }

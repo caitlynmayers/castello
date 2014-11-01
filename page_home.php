@@ -19,6 +19,9 @@ get_header( 'home' ); ?>
 				<div class="overlay matter">
 					<img src="<?php bloginfo('template_directory'); ?>/img/water-bg.png" />
 				</div>
+				<div>
+				<?php get_template_part( 'matter_home' ); ?>
+				</div>
 			</div>
 			<div class="feed">
 				<div class="overlay life">
