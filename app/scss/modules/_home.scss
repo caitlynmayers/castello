@@ -1,0 +1,104 @@
+.feed {
+	
+	@include span-columns(4);
+	
+	display: inline-block;
+	height: 100%;
+	padding: 1.5em 0;
+	text-align: center;
+	
+	h3 {
+		
+		padding: .75em 0 .5em 0;
+		
+	}
+	
+	img {
+		
+		height: 160px;
+		width: 160px;
+		
+	}
+	
+	.overlay {
+		
+		display: block;
+		position: relative;
+		
+		&:before {
+			
+			content: '';
+			border-radius: 80px;
+			bottom: 0;
+			height: 160px;
+			opacity: .25;
+			position: absolute;
+			top: 0;
+			width: 160px;
+			
+		}
+		
+		&:after {
+			
+			content: '';
+			color: white;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 38%;
+			
+			@include lato-light(35px);
+			
+		}
+		
+	}
+	
+	.speaking {
+	
+		&:before {
+			
+			background-color: $navy;
+			
+		}
+	
+		&:after {
+			
+			content: 'Speaking';
+			
+		}
+		
+	}
+	
+	.matter {
+		
+		&:before {
+			
+			background-color: $bright-magenta;
+			
+		}
+	
+		&:after {
+			
+			content: 'Matter';
+			
+		}
+		
+	}
+	
+	.life {
+		
+		&:before {
+			
+			background-color: $true-blue;
+			
+		}
+	
+		&:after {
+			
+			content: 'Life';
+			
+		}
+		
+	}
+	
+}

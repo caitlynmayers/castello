@@ -3,13 +3,13 @@
 /* Create Post Types Function
 ---------------------------------------------------------------------- */
 function create_post_types() {
-	// post_type_init(
-	// 	array(
-	// 		'slug'				=>		'sample', 				// Required
-	// 		'singular'			=>		'Sample',				// Required	
-	// 		'plural'			=>		'Samples',				// Required
-	// 	)
-	// );
+	 post_type_init(
+		array(
+	 		'slug'				=>		'matter', 				// Required
+	 		'singular'			=>		'Matter',				// Required	
+	 		'plural'			=>		'Matter',				// Required
+	 	)
+	 );
 }	
 
 
