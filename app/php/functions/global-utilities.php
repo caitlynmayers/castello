@@ -14,6 +14,17 @@ register_nav_menus(array(
 	'primary'	=>	'Primary Navigation'
 ));
 
+// Excerpt Filter Length and Characters at end
+function custom_excerpt_length( $length ) {
+	return 15;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 // Custom Title
 function custom_title( $title, $sep ) {
 	global $paged, $page;

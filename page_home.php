@@ -19,13 +19,18 @@ get_header( 'home' ); ?>
 				<div class="overlay matter">
 					<img src="<?php bloginfo('template_directory'); ?>/img/water-bg.png" />
 				</div>
-				<div>
 				<?php get_template_part( 'matter_home' ); ?>
+				<div class="view-all">
+					<a href="/wp/matter">View All Matter</a>
 				</div>
 			</div>
 			<div class="feed">
 				<div class="overlay life">
 					<img src="<?php bloginfo('template_directory'); ?>/img/water-bg.png" />
+				</div>
+				<?php get_template_part( 'life_home' ); ?>
+				<div class="view-all">
+					<a href="#">View All Life</a>
 				</div>
 			</div>
 		</section>

@@ -1,5 +1,5 @@
 <?php 
-$args = array( 'post_type' => 'matter', 'posts_per_page' => 2 );
+$args = array( 'post_type' => 'post', 'posts_per_page' => 2 );
 $the_query = new WP_Query( $args ); 
 ?>
 <?php if ( $the_query->have_posts() ) : ?>
