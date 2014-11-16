@@ -4,7 +4,7 @@
 	
 	display: inline-block;
 	height: 100%;
-	padding: 1.5em 0;
+	padding: 1.5em 1em;
 	
 	h3 {
 		
@@ -54,7 +54,7 @@
 		
 	}
 	
-	.speaking {
+	.lectures {
 	
 		&:before {
 			
@@ -64,7 +64,7 @@
 	
 		&:after {
 			
-			content: 'Speaking';
+			content: 'Lectures';
 			
 		}
 		
@@ -148,17 +148,34 @@
 		
 		@include lato-light(18px);
 		
+		clear: both;
+		display: block;
 		text-align: center;
 		
 		a {
 		
 			&:after {
-			 
-				 content: '>';
-				 height: 15px;
-				 margin-right: 15px;
-				 width: 15px;
+			
+				background-image: url('../../img/caret.svg');
+				content: '';
+				display: inline-block;
+				height: 15px;
+				margin-left: .5em;
+				vertical-align: bottom;
+				width: 12px;
 				 
+			}
+			
+			&:hover {
+			
+				&:after {
+					
+					@include transition(all .1s ease-in-out);
+					
+					margin-left: .75em;
+					
+				}
+				
 			}
 			
 		}

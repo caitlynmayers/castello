@@ -9,20 +9,16 @@ get_header( 'home' ); ?>
 	<div class="content-wrap">
 		<section>
 			<div class="feed">
-				<div class="overlay speaking">
-					<img src="<?php bloginfo('template_directory'); ?>/img/water-bg.png" />
-				</div>
-					<h3>Alzheimer's Association International Conference</h3>
-					<h4>July 14, 2014 | Copenhagen, Denmark</h4>
-			</div>
-			<div class="feed">
 				<div class="overlay matter">
 					<img src="<?php bloginfo('template_directory'); ?>/img/water-bg.png" />
 				</div>
 				<?php get_template_part( 'matter_home' ); ?>
-				<div class="view-all">
-					<a href="/wp/matter">View All Matter</a>
+			</div>
+			<div class="feed">
+				<div class="overlay lectures">
+					<img src="<?php bloginfo('template_directory'); ?>/img/water-bg.png" />
 				</div>
+				<?php get_template_part( 'lecture_home' ); ?>
 			</div>
 			<div class="feed">
 				<div class="overlay life">

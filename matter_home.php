@@ -23,3 +23,6 @@ $the_query = new WP_Query( $args );
 	<?php wp_reset_postdata(); ?>
 <?php endwhile; 
 	endif; ?>
+	<div class="view-all">
+		<a href="/wp/matter">View All Matter</a>
+	</div>
