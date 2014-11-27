@@ -47,3 +47,25 @@ var Global = {};
 }(window.jQuery));
 
 module.exports = Global;
+
+// Showing and Hiding Mobile Menu
+
+var appState = '';
+
+function mobile_nav_trigger() {
+	if (appState == '') {
+		$('body').addClass('menu-open');
+		appState = 'menu-open';
+	} else {
+		$('body').removeClass('menu-open');
+		appState = '';
+	}
+}
+
+// A $( document ).ready() block.
+$(document).ready(function() { 
+  $('#mobile-menu-trigger').click(function(event){
+		event.preventDefault();
+		mobile_nav_trigger();
+	});
+});

@@ -54,18 +54,11 @@ header {
 				content: "";
 				display: block;
 				height: 0;
-				position: absolute;
 				left: 0;
-				margin-left: 25px;
-				margin-top: 5px;
+				margin-left: 1em;
+				margin-top: 2em;
 				top: 0;
 				width: 24px;			
-				
-				@include mediaQuery(500px){
-				
-					margin-top: 10px;
-				
-					}
 				
 				}
 				
@@ -83,19 +76,32 @@ header {
 		
 			@include lato-normal(22px);
 		
-			display: block;
+			clear: both;
+			display: none;
 			padding-top: 30px;
 			text-transform: uppercase;
 			
-			a {
-				
-				color: $white;
-				padding-bottom: .2em;
+			ul {
+					
+				li {
+					
+					padding-left: 35px;
+			
+					a {
+						
+						color: $white;
+						padding-bottom: .2em;
+						
+					}
+					
+				}
 				
 			}
 			
 			@include mediaQuery(620px){
 				
+				clear: none;
+				display: block;
 				float: left;
 				
 				ul {
@@ -103,7 +109,6 @@ header {
 					li {
 						
 						display: inline-block;
-						padding-left: 35px;
 						
 						&.current-menu-item > a {
 							
@@ -114,8 +119,7 @@ header {
 						a {
 							
 							&:hover {
-								
-								color: $white;
+
 								border-bottom: 1px solid $bright-magenta;
 								
 							}
@@ -130,9 +134,9 @@ header {
 			
 		}
 		
-		.menu-closed {
+		.menu-open {
 			
-			display: none;
+			display: block;
 			
 		}
 		
