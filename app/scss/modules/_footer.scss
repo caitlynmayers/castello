@@ -6,7 +6,13 @@ footer {
 	
 	p {
 	
-		@include span-columns(4);
+		@include span-columns(12);
+	
+		@include mediaQuery(1024px){
+			
+			@include span-columns(4);
+			
+		}
 		
 	}
 	

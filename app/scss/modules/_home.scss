@@ -1,6 +1,12 @@
 .feed {
 	
-	@include span-columns(4);
+	@include mediaQuery(1024px){
+		
+		@include span-columns(4);
+		
+	}
+	
+	@include span-columns(12);
 	
 	display: inline-block;
 	height: 100%;
