@@ -55,8 +55,11 @@
 				
 				<section class="interior reversed">
 					
-					<?php the_field('masthead_text'); ?>
+					<h1>life | līf |</h1>
+					<p>1. the condition that distinguishes animals and plants from inorganic matter, including the capacity for growth, reproduction, functional activity, and continual change preceding death: <em>the origins of life</em>.<br /> • living things and their activity: <em>some sort of life existed on Mars</em> | <em>lower forms of life</em> | <em>the ice-cream vendors were the only signs of life</em>.</p>
 				
 				</section>
+				
+				<img class="photo short" src="<?php bloginfo('template_directory'); ?>/img/castello-trim.png" />
 				
 			</header>

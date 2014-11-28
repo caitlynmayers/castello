@@ -1,10 +1,16 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Single
+*/
+get_header( 'interior' ); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <?php $this_page = new Post(get_the_ID()); ?>
 <div id="main" role="main">
-	<h2><?php the_title(); ?></h2>
-	<?php the_content(); ?>
+	<div class="content-wrap">
+		<article class="content">
+			<?php the_content(); ?>
+		</article>
+	</div>
 </div>
 <?php endwhile; endif; ?>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Interior Page
+Template Name: Matter Single
 */
 get_header( 'interior' ); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
@@ -10,7 +10,6 @@ get_header( 'interior' ); ?>
 		<article class="content">
 			<?php the_content(); ?>
 		</article>
-		<?php get_sidebar(); ?>
 	</div>
 </div>
 <?php endwhile; endif; ?>
