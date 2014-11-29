@@ -2,7 +2,7 @@
 /*
 Template Name: Matter Single
 */
-get_header( 'interior' ); ?>
+get_header( 'matter' ); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <?php $this_page = new Post(get_the_ID()); ?>
 <div id="main" role="main">
