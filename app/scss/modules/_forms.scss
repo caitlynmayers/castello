@@ -1,7 +1,7 @@
 form {
-	
+
 	ul > li {
-		
+			
 		float: left;
 		list-style-type: none;
 		margin-left: 0 !important;
@@ -9,19 +9,39 @@ form {
 		width: 100%;
 		
 		&:nth-child(1) {
-			
-			padding-right: .5em;
-			width: 50%;
+
+			width: 100%;
 			
 		}
 		
 		&:nth-child(2) {
 			
-			padding-left: .5em;
-			width: 50%;
+			width: 100%;
 			
 		}
 		
+	}
+
+	@include mediaQuery(500px){
+	
+		ul > li {
+			
+			&:nth-child(1) {
+				
+				padding-right: .5em;
+				width: 50%;
+				
+			}
+			
+			&:nth-child(2) {
+				
+				padding-left: .5em;
+				width: 50%;
+				
+			}
+			
+		}
+	
 	}
 	
 	label {
