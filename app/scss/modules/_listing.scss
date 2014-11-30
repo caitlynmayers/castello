@@ -68,10 +68,14 @@ article {
 		@include span-columns(2);
 		@include shift(1);
 		
-		background-color: red;
 		display: inline-block;
-		height: 160px;
-		width: 160px;
+		padding-top: 2em;
+		
+		img {
+		
+			width: 100%;
+		
+		}
 		
 	}
 	

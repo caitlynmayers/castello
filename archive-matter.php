@@ -20,7 +20,25 @@ $the_query = new WP_Query( 'cat=1&paged=' . $paged );
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 	<?php $this_page = new Post(get_the_ID()); ?>
 		<article role="article">
-			<div class="feature-img" style="background-image: url(<?php echo $post_thumb[0]; ?>);"></div>
+		<?php if ( has_post_thumbnail() ) : ?>
+			
+			<div class="feature-img">
+				
+				<img src="<?php the_post_thumbnail(); ?>" />
+				
+			</div>
+			
+			<?php else : 
+				$category = get_the_category(); 
+			?>
+			
+			<div class="feature-img">
+			
+				<img src="<?php bloginfo('url'); ?>/wp-content/themes/castello/img/<?php echo $category[0]->category_nicename ; ?>.png" alt="<?php echo $category[0]->category_nicename ; ?>" />
+			
+			</div>
+		
+		<?php endif; ?>
 			<div class="meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 				<h6>by <?php the_author(); ?>, <?php the_date(); ?></h6>
