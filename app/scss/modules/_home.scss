@@ -1,8 +1,27 @@
 .feed {
 	
-	@include mediaQuery(1024px){
+	@include mediaQuery(680px) {
+		
+		@include span-columns(6);
+		@include omega();
+		
+		&:last-child {
+			
+			clear: both;
+			
+		}
+		
+	}
+	
+	@include mediaQuery(1024px) {
 		
 		@include span-columns(4);
+		
+		&:last-child {
+			
+			clear: none;
+			
+		}
 		
 	}
 	
