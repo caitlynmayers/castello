@@ -9,9 +9,29 @@
 		@include lato-light(16px);
 		
 		.items {
+		
+			@include span-columns(12);
 			
-			@include span-columns(6);
-			@include shift(1);
+			line-height: 2em;
+			
+			@include mediaQuery(510px){
+							
+				line-height: inherit;
+				
+			}
+		
+			@include mediaQuery(785px){
+		
+				@include span-columns(8);
+				@include shift(1);
+			
+			}
+			
+			@include mediaQuery(1044px) {
+				
+				@include span-columns(6);
+				
+			}
 			
 			background-color: $navy;
 			height: 100% !important;
@@ -31,7 +51,13 @@
 						
 						border-bottom: 3px solid $bright-magenta;
 						color: $bright-magenta;
-						padding-bottom: .75em;
+						padding-bottom: .25em;
+						
+						@include mediaQuery(510px){
+							
+							padding-bottom: .75em;
+							
+						}
 						
 					}
 					
@@ -41,7 +67,13 @@
 					
 					border-bottom: 3px solid $bright-magenta;
 					color: $bright-magenta;
-					padding-bottom: .75em;
+					padding-bottom: .25em;
+					
+					@include mediaQuery(510px){
+							
+						padding-bottom: .75em;
+						
+					}
 					
 				}
 				
@@ -50,9 +82,20 @@
 		}
 		
 		.matter {
+		
+			@include span-columns(12);
 			
-			@include span-columns(4);
+			@include mediaQuery(610px){
+				
+				@include span-columns(5);
+				
+			}
 			
+			@include mediaQuery(766px){
+				
+				@include span-columns(4);
+				
+			}
 		}
 	
 	}
