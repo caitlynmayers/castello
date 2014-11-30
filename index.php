@@ -4,7 +4,7 @@ get_header( 'life' ); ?>
 	<div class="list">
 		<div class="items">
 			<li><a href="/wp/life">All</a></li>
-			<?php wp_list_categories('exclude=1&title_li='); ?>
+			<?php wp_list_categories('exclude=112,113,114,1&title_li='); ?>
 		</div>
 	</div>
 </div>
@@ -24,18 +24,28 @@ $the_query = new WP_Query( 'cat=1&paged=' . $paged );
 			<div class="meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 				<h6>by <?php the_author(); ?>, <?php the_date(); ?></h6>
-				<?php the_excerpt(); ?>
-				<a href="<?php the_permalink(); ?>">Read More</a>
+				<?php
+					$content = get_the_content(); 
+				?>
+				<p><?php echo wp_trim_words( $content, '55'); ?></p>
+				<a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
 			</div>
 		</article>
 		<?php endwhile; endif; ?>
 		<div class="pagination">
-			<?php
-				// next_posts_link() usage with max_num_pages
-				previous_posts_link( 'Newer Entries' );
-				next_posts_link( 'Older Entries', $the_query->max_num_pages );
-			?>
-			
+			<ul>
+				<li class="newer">
+				<?php
+					// next_posts_link() usage with max_num_pages
+					previous_posts_link( 'Newer Posts' );
+				?>
+				</li>
+				<li class="older">
+				<?php
+					next_posts_link( 'Older Posts', $the_query->max_num_pages );
+				?>
+				</li>
+			</ul>
 			<?php 
 				// clean up after the query and pagination
 				wp_reset_postdata(); 

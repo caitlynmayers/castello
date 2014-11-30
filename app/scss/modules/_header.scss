@@ -254,3 +254,39 @@ header {
 	}
 	
 }
+
+.border-bottom {
+	
+	border-bottom: 1px solid $bright-magenta;
+	
+}
+
+.single-post {
+	
+	.menu-item-19 > a {
+		
+		@extend .border-bottom;
+		
+	}
+	
+}
+
+.single-matter, .post-type-archive-matter {
+	
+	.menu-item-20 > a {
+		
+		@extend .border-bottom;
+		
+	}
+	
+}
+
+.page-id-38 {
+	
+	.menu-item-16 > a {
+		
+		@extend .border-bottom;
+		
+	}
+	
+}

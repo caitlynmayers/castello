@@ -1,6 +1,7 @@
 .category-wrapper {
 
 	background-color: $off-white;
+	padding-bottom: 1em;
 
 	.list {
 	
@@ -10,6 +11,7 @@
 		.items {
 			
 			@include span-columns(6);
+			@include shift(1);
 			
 			background-color: $navy;
 			height: 100% !important;
@@ -46,6 +48,12 @@
 			}
 		
 		}
+		
+		.matter {
+			
+			@include span-columns(4);
+			
+		}
 	
 	}
 	
@@ -53,7 +61,12 @@
 
 article {
 
+	@include outer-container;
+
 	.feature-img {
+	
+		@include span-columns(2);
+		@include shift(1);
 		
 		background-color: red;
 		display: inline-block;
@@ -64,8 +77,10 @@ article {
 	
 	.meta {
 	
+		@include span-columns(7);
+	
 		display: inline-block;
-		padding: 2em 0;
+		padding: 2em;
 		
 		h3 {
 		
@@ -81,6 +96,75 @@ article {
 				
 			}
 			
+		}
+		
+		.read-more {
+			
+			@include lato-light(16px);
+			
+			&:after {
+			
+				background-image: url('../../img/caret.svg');
+				content: '';
+				display: inline-block;
+				height: 12px;
+				margin-left: .5em;
+				vertical-align: middle;
+				width: 10px;
+				 
+			}
+			
+		}
+		
+	}
+	
+}
+
+.pagination {
+
+	padding: 1em 0;
+	text-align: center;
+	
+	ul > li {
+		
+		@include lato-light(16px);
+		
+		display: inline-block;
+		list-style-type: none;
+		margin: 0 1em;
+		
+	}
+	
+	.older {
+		
+		&:after {
+			
+			background-image: url('../../img/caret.svg');
+			content: '';
+			display: inline-block;
+			height: 15px;
+			margin-left: .5em;
+			vertical-align: middle;
+			width: 12px;
+			 
+		}
+		
+	}
+	
+	.newer > a {
+		
+		&:before {
+			
+			@include transform(rotate(180deg));
+			
+			background-image: url('../../img/caret.svg');
+			content: '';
+			display: inline-block;
+			height: 15px;
+			margin-right: .5em;
+			vertical-align: middle;
+			width: 12px;
+			 
 		}
 		
 	}

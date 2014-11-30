@@ -1,0 +1,109 @@
+form {
+	
+	ul > li {
+		
+		float: left;
+		list-style-type: none;
+		margin-left: 0 !important;
+		padding: .25em 0;
+		width: 100%;
+		
+		&:nth-child(1) {
+			
+			padding-right: .5em;
+			width: 50%;
+			
+		}
+		
+		&:nth-child(2) {
+			
+			padding-left: .5em;
+			width: 50%;
+			
+		}
+		
+	}
+	
+	label {
+		
+		@include lato-light(18px);
+		
+		.gfield_required {
+			
+			color: $bright-magenta;
+			
+		}
+		
+	}
+	
+	input {
+		
+		border: 1px solid #d0d0d0;
+		font-size: .75em;
+		height: 45px;
+		padding-left: .25em;
+		width: 100%;
+		
+		&[type=submit] {
+			
+			@include lato-light(22px);
+			
+			background-color: $med-blue;
+			border: none;
+			color: white;
+			margin: .5em 0;
+			width: 50%;
+			
+			&:hover {
+				
+				@include transition(all .1s ease-in-out);
+				
+				background-color: $dark-blue;
+				
+			}
+			
+		}
+		
+		&:focus {
+			
+			outline: none !important;
+			border: 1px solid $blue;
+			
+		}
+		
+	}
+	
+	textarea {
+		
+		border: 1px solid #d0d0d0;
+		font-size: .75em;
+		padding: .5em;
+		width: 100%;
+		
+		&:focus {
+			
+			outline: none !important;
+			border: 1px solid $blue;
+			
+		}
+		
+	}
+	
+	.validation_error, .validation_message {
+		
+		@include lato-light-ital(16px);
+		
+		color: $bright-magenta;
+		margin-bottom: .5em;
+		
+	}
+	
+}
+
+.gform_confirmation_wrapper {
+		
+	@include lato-light(16px);
+	
+	color: $true-blue;
+	
+}
