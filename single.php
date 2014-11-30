@@ -2,7 +2,7 @@
 /*
 Template Name: Single
 */
-get_header( 'life' ); ?>
+get_header( 'single' ); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <?php $this_page = new Post(get_the_ID()); ?>
 <div id="main" role="main">
