@@ -1,6 +1,16 @@
 .sidebar {
 
-	@include span-columns(3);
+	@include span-columns(12);
+	
+	padding: 0 2em;
+	
+	@include mediaQuery(800px){
+		
+		@include span-columns(3);
+		
+		padding: 0;
+		
+	}
 	
 	.link {
 
@@ -24,17 +34,30 @@
 			
 			h5 {
 				
-				margin-left: 2em;
+				margin-left: 1em;
 				
 				&:after {
-				
+					
 					@include lato-normal(28px);
 				
 					content:">";
-					line-height: .65em;
-					padding-left: 2em;
+					padding-left: .5em;
 					position: absolute;
 					
+				}
+				
+				@include mediaQuery(1024px){
+				
+					margin-left: 2em;
+				
+					&:after {
+					
+						@include lato-normal(28px);
+					
+						padding-left: 2em;
+						
+					}
+				
 				}
 				
 			}
@@ -45,8 +68,16 @@
 	
 	.social {
 		
+		@include clearfix;
+		
 		margin-left: 1.5em;
-		padding-top: 2em;
+		padding: 2em 0;
+		
+		@include mediaQuery(800px){
+			
+			margin-left: .5em;
+			
+		}
 		
 		.icon {
 			
