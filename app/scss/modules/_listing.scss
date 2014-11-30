@@ -108,11 +108,12 @@ article {
 
 	.feature-img {
 	
-		@include span-columns(2);
-		@include shift(1);
+		@include span-columns(4);
+		@include shift(4);
 		
 		display: inline-block;
 		padding-top: 2em;
+		text-align: center;
 		
 		img {
 		
@@ -120,11 +121,30 @@ article {
 		
 		}
 		
+		@include mediaQuery(600px){
+			
+			@include span-columns(2);
+			@include shift(1);
+			
+		}
+		
 	}
 	
 	.meta {
 	
-		@include span-columns(7);
+		@include span-columns(12);
+		
+		@include mediaQuery(600px){
+			
+			@include span-columns(9);
+			
+		}
+		
+		@include mediaQuery(1024px){
+			
+			@include span-columns(7);
+			
+		}
 	
 		display: inline-block;
 		padding: 2em;
