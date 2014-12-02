@@ -17,10 +17,10 @@ var Global = {};
 	var appState = '';
 	function mobile_nav_trigger() {
 		if (appState == '') {
-			$('body').addClass('menu-open');
+			$('nav').addClass('menu-open');
 			appState = 'menu-open';
 		} else {
-			$('body').removeClass('menu-open');
+			$('nav').removeClass('menu-open');
 			appState = '';
 		}
 	}
