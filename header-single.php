@@ -28,6 +28,14 @@
 						
 					</a>
 					
+					<a href="#" id="mobile-menu-trigger">
+			
+						<span class="icon"></span>
+						
+						<span class="text">Menu</span>
+						
+					</a>
+					
 					<nav>
 					
 						<ul class="menu">

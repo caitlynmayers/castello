@@ -2,7 +2,13 @@ header {
 	
 	overflow: auto;
 	padding-top: 2em;
-	position: relative;
+	/* position: relative; */
+	
+	@include mediaQuery(640px){
+		
+		position: relative;
+		
+	}
 	
 	.nav-bar {
 		
@@ -265,14 +271,13 @@ header {
 	
 	background-color: $true-blue;	
 	display: block !important;
-	height: 100%;
 	margin-top: 4.75em;
 	position: absolute;
 	width: 100%;
 	
 	ul > li {
 		
-		padding: .5em 1em 1.5em 1em;
+		padding: 0 1em 1.5em 1em;
 		
 	}
 	
@@ -295,11 +300,15 @@ header {
 }
 
 .single-matter, .post-type-archive-matter {
+
+	@include mediaQuery(640px){
 	
-	.menu-item-20 > a {
-		
-		@extend .border-bottom;
-		
+		.menu-item-20 > a {
+			
+			border-bottom: 1px solid $bright-magenta;
+			
+		}
+	
 	}
 	
 }
