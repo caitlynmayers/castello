@@ -6,15 +6,24 @@ window.jQuery = window.jQuery || require('jquery');
 // Make sure to also include jQuery plugins, through
 require('GSAP');
 
-// Include Plugins
-window.jRespond      = window.jRespond || require('jRespond');
-
 var attachFastClick = require('fastclick');
 
 var Global = {};
 
 (function ($) {
     'use strict';
+	
+	// Showing and Hiding Mobile Menu
+	var appState = '';
+	function mobile_nav_trigger() {
+		if (appState == '') {
+			$('body').addClass('menu-open');
+			appState = 'menu-open';
+		} else {
+			$('body').removeClass('menu-open');
+			appState = '';
+		}
+	}
 
     Global = function () {
 
@@ -30,6 +39,12 @@ var Global = {};
                 }
 
                 $(window).on('orientationchange', self.updateOrientation);
+                
+                $('#mobile-menu-trigger').click(function(event){
+					event.preventDefault();
+					mobile_nav_trigger();
+				});
+               
             });
         };
 
@@ -47,25 +62,3 @@ var Global = {};
 }(window.jQuery));
 
 module.exports = Global;
-
-// Showing and Hiding Mobile Menu
-
-var appState = '';
-
-function mobile_nav_trigger() {
-	if (appState == '') {
-		$('body').addClass('menu-open');
-		appState = 'menu-open';
-	} else {
-		$('body').removeClass('menu-open');
-		appState = '';
-	}
-}
-
-// A $( document ).ready() block.
-$(document).ready(function() { 
-  $('#mobile-menu-trigger').click(function(event){
-		event.preventDefault();
-		mobile_nav_trigger();
-	});
-});
