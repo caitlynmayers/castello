@@ -2,7 +2,6 @@ header {
 	
 	overflow: auto;
 	padding-top: 2em;
-	/* position: relative; */
 	
 	@include mediaQuery(640px){
 		
@@ -149,27 +148,42 @@ header {
 			
 		}
 		
-		.search {
+		#search-trigger {
 		
-			display: none;
+			.search {
 		
-			@include mediaQuery(640px){
-				
-				display: block;
-				float: right;
-				opacity: .2;
-				margin-right: 1em;
-				padding-top: 20px;
-				width: 40px;
-				
-				@include transition (all 100ms ease-in-out);
-				
-				&:hover {
+				display: none;
+			
+				@include mediaQuery(640px){
 					
-					opacity: .6;
+					display: block;
+					float: right;
+					opacity: .2;
+					margin-right: 1em;
+					padding-top: 20px;
+					width: 40px;
 					
-				}	
+					@include transition (all 100ms ease-in-out);
 					
+					&:hover {
+						
+						opacity: .6;
+						
+					}	
+						
+				}
+				
+			}
+		
+		}
+		
+		.form-open {
+				
+			.search {
+				
+				width: 100%;
+				background-color: red;
+				
 			}
 			
 		}
