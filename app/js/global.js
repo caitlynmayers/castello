@@ -24,6 +24,18 @@ var Global = {};
 			appState = '';
 		}
 	}
+	
+	// Showing and Hiding Search Field
+	var searchState = '';
+	function search_form_trigger() {
+		if (searchState == '') {
+			$('.form').addClass('form-open');
+			searchState = 'menu-open';
+		} else {
+			$('.form').removeClass('form-open');
+			searchState = '';
+		}
+	}
 
     Global = function () {
 
@@ -43,6 +55,11 @@ var Global = {};
                 $('#mobile-menu-trigger').click(function(event){
 					event.preventDefault();
 					mobile_nav_trigger();
+				});
+				
+				$('#search-trigger').click(function(event){
+					event.preventDefault();
+					search_form_trigger();
 				});
                
             });

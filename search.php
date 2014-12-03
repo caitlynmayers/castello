@@ -12,7 +12,6 @@ $the_query = new WP_Query( 'cat=1&paged=' . $paged );
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 	<?php $this_page = new Post(get_the_ID()); ?>
 		<article role="article">
-<!--
 		<?php if ( has_post_thumbnail() ) : ?>
 			
 			<div class="feature-img">
@@ -32,7 +31,6 @@ $the_query = new WP_Query( 'cat=1&paged=' . $paged );
 			</div>
 		
 		<?php endif; ?>
--->
 		
 			<div class="meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>

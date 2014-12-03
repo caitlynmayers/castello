@@ -58,13 +58,13 @@
 									<path fill="#E7E7E7" d="M19.7,13.8c-3.1,0-5.6,2.5-5.6,5.6s2.5,5.6,5.6,5.6c3.1,0,5.6-2.5,5.6-5.6S22.8,13.8,19.7,13.8z"/>
 								</g>
 							</svg>
-							
-							<div>
-								<?php get_search_form(); ?>
-							</div>
 						
 						</div>
 					
+					</div>
+					
+					<div class="form">
+						<?php get_search_form(); ?>
 					</div>
 					
 				</div>
