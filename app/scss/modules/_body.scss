@@ -49,4 +49,53 @@
 		
 	}
 	
+	.gif {
+		
+		padding: 2em 1em;
+		width: 100%;
+		
+		@include mediaQuery(400px){
+			
+			margin-left: 15%;
+			width: 75%;
+			
+		}
+		
+		@include mediaQuery(550px){
+			
+			margin-left: 20%;
+			width: 60%;
+			
+		}
+		
+		@include mediaQuery(700px){
+			
+			margin-left: 25%;
+			width: 50%;
+			
+		}
+		
+		@include mediaQuery(900px){
+			
+			margin-left: 30%;
+			width: 40%;
+			
+		}
+		
+		@include mediaQuery(1150px){
+			
+			margin-left: 35%;
+			width: 35%;
+			
+		}
+		
+		@include mediaQuery(1200px){
+			
+			margin-left: 20%;
+			width: 30%;
+			
+		}
+		
+	}
+	
 }

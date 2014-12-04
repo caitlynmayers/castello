@@ -1,7 +1,11 @@
-<?php get_header(); ?>
+<?php get_header( '404' ); ?>
 <div id="main" role="main">
-	<h2>404 Error - Page not found</h2>
-	<p>Sorry, we can't find the page you are looking for! Perhaps you have entered the wrong URL?</p>
+	<div class="content-wrap">
+		<article class="content">
+			<h5>Due to mandatory scheduled maintenance, the next test is currently unavailable. It has been replaced with a live-fire course designed for military androids. The Enrichment Center apologizes and wishes you the best of luck. Return <a href="/">Home</a>?</h5>
+		</article>
+		<img class="gif" src="<?php bloginfo('template_directory'); ?>/img/404.gif" />
+	</div>
+
 </div>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
