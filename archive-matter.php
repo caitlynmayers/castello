@@ -51,22 +51,19 @@ $the_query = new WP_Query( 'cat=1&paged=' . $paged );
 		</article>
 		<?php endwhile; endif; ?>
 		<div class="pagination">
-			<ul>
-				<li class="newer">
-				<?php
-					// next_posts_link() usage with max_num_pages
-					previous_posts_link( 'Newer Posts' );
-				?>
-				</li>
-				<li class="older">
-				<?php
-					next_posts_link( 'Older Posts', $the_query->max_num_pages );
-				?>
-				</li>
-			</ul>
 			<?php 
-				// clean up after the query and pagination
-				wp_reset_postdata(); 
+				$prev_link = get_previous_posts_link(__('Newer Posts'));
+				$next_link = get_next_posts_link(__('Older Posts'));
+				// as suggested in comments
+				if ($prev_link || $next_link) {
+				  echo '<ul>';
+				  if ($prev_link){
+				    echo '<li class="newer">'.$prev_link .'</li>';
+				  }
+				  if ($next_link){
+				    echo '<li class="older">'.$next_link .'</li>';
+				  }
+				} 
 			?>
 		</div>
 	</div>
