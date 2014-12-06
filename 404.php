@@ -4,7 +4,7 @@
 		<article class="content">
 			<h5>Due to mandatory scheduled maintenance, the next test is currently unavailable. It has been replaced with a live-fire course designed for military androids. The Enrichment Center apologizes and wishes you the best of luck. Return <a href="/">Home</a>?</h5>
 		</article>
-		<img class="gif" src="<?php bloginfo('template_directory'); ?>/img/404.gif" />
+		<a href="/"><img class="gif" src="<?php bloginfo('template_directory'); ?>/img/404.gif" /></a>
 	</div>
 
 </div>
