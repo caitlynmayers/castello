@@ -21,12 +21,6 @@ header {
 			margin-left: 2em;
 			width: 80px;
 			
-			@include mediaQuery(1024px){
-				
-				margin-left: 0;
-				
-			}
-			
 		}
 		
 		#mobile-menu-trigger {
@@ -34,7 +28,7 @@ header {
 			display: block;
 			width: 70px;
 			position: absolute;
-			right: 0;
+			right: 1em;
 			text-align: center;
 			text-decoration: none;
 			top: 0;
@@ -43,9 +37,7 @@ header {
 				
 				display: block;
 				height: 40px;
-				margin: 0 auto;
 				padding-bottom: 1em;
-				width: 80px;
 				
 				@include mediaQuery(500px){
 				
