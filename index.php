@@ -3,7 +3,7 @@ get_header( 'life' ); ?>
 <div class="category-wrapper">
 	<div class="list">
 		<div class="items">
-			<li><a href="/wp/life">All</a></li>
+			<li><a href="/wordpress/life">All</a></li>
 			<?php wp_list_categories('exclude=112,113,114,1&title_li='); ?>
 		</div>
 	</div>

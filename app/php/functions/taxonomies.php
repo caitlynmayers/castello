@@ -3,14 +3,14 @@
 /* Create Taxonomies
 ---------------------------------------------------------------------- */
 function create_taxonomies() {
-	// taxonomy_init(
-	// 	$settings = array(
-	// 		'slug'      	=>  'sample',			// Required
-	// 		'singular'  	=>  'Sample',			// Required
-	// 		'plural'    	=>  'Samples',			// Required
-	// 		'post_types'	=>  'your_CPT',			// Required
-	// 	)
-	// );
+	 taxonomy_init(
+	 	$settings = array(
+	 		'slug'      	=>  'matter-category',			// Required
+	 		'singular'  	=>  'matter-category',			// Required
+	 		'plural'    	=>  'matter-category',		// Required
+	 		'post_types'	=>  'matter',		// Required
+	 	)
+	 );
 }
 
 /* Programatically Register Taxonomies (*** DO NOT EDIT ***)
