@@ -20,16 +20,16 @@ assign your taxonomy to a post type or array of post type.
 		 taxonomy_init(
 		 	$settings = array(
 		 		'slug'      	=>  'matter',				// Required
-		 		'singular'  	=>  'Matter',				// Required
-		 		'plural'    	=>  'Matter Categories',	// Required
+		 		'singular'  	=>  'matter',				// Required
+		 		'plural'    	=>  'matter categories',	// Required
 		 		'post_types'	=>  'post',					// Required
 		 	)
 		 );
 		 taxonomy_init(
 		 	$settings = array(
 		 		'slug'      	=>  'life',				// Required
-		 		'singular'  	=>  'Life',				// Required
-		 		'plural'    	=>  'Life Categories',	// Required
+		 		'singular'  	=>  'life',				// Required
+		 		'plural'    	=>  'life categories',	// Required
 		 		'post_types'	=>  'post',				// Required
 		 	)
 		 );
