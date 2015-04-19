@@ -17,15 +17,12 @@
 		<div id="app">
 			<header id="site-header">
 				<div class="container">
-					<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 					<nav>
-					
-						<ul class="menu">
-					
+						<ul>
 							<?php wp_nav_menu('theme_location=primary&container=&items_wrap=%3$s'); ?>
-					
 						</ul>
-					
 					</nav>
+					<a href="<?php bloginfo('url'); ?>">Link Home</a>
+					<h1><?php the_field('heading'); ?></h1>
 				</div>
 			</header>
