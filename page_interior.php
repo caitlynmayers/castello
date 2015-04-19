@@ -2,7 +2,7 @@
 /*
 Template Name: Interior Page
 */
-get_header(); ?>
+get_header( 'interior' ); ?>
 <div id="main" role="main">
 	<div class="container">
 		<div class="primary -left">

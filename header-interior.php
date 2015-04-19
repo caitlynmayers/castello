@@ -17,7 +17,8 @@
 		<div id="app">
 			<header id="site-header">
 				<div class="container">
-					<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+					<h1><?php the_field('heading'); ?></h1>
+					<p><?php the_field('subheading'); ?></p>
 					<nav>
 					
 						<ul class="menu">
