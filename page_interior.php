@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Home Page
+Template Name: Interior Page
 */
 get_header(); ?>
 <div id="main" role="main">
