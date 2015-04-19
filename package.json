@@ -24,9 +24,10 @@
   "dependencies": {
     "browsernizr": "https://github.com/thejsj/browsernizr/tarball/master",
     "fastclick": "^1.0.1",
-    "jquery": "https://github.com/jquery/jquery/archive/1.11.1.tar.gz",
     "jRespond": "https://github.com/thejsj/jRespond/tarball/master",
-    "mustache": "~0.8.1"
+    "jquery": "https://github.com/jquery/jquery/archive/1.11.1.tar.gz",
+    "mustache": "~0.8.1",
+    "node-notifier": "^4.1.0"
   },
   "browser": {
     "GSAP": "./app/js/vendor/GreenSock-JS-1.12.1/src/minified/TweenMax.min.js"

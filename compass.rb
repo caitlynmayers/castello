@@ -9,4 +9,4 @@ relative_assets = true
 line_comments = true
 
 # require animation plugin
-require 'animation'
+#require 'animation'

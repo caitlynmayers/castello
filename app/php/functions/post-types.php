@@ -2,7 +2,7 @@
 
 /* Create Post Types Function
 ---------------------------------------------------------------------- */
-function create_post_types() {
+/* function create_post_types() {
 	 post_type_init(
 		array(
 	 		'slug'				=>		'matter', 				// Required
@@ -10,7 +10,7 @@ function create_post_types() {
 	 		'plural'			=>		'Matter',				// Required
 	 	)
 	 );
-}	
+} */	
 
 
 /* Programatically Register Post Types (*** DO NOT EDIT ***)

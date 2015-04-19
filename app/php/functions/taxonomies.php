@@ -2,7 +2,7 @@
 
 /* Create Taxonomies
 ---------------------------------------------------------------------- */
-function create_taxonomies() {
+/*function create_taxonomies() {
 	 taxonomy_init(
 	 	$settings = array(
 	 		'slug'      	=>  'matter-category',			// Required
@@ -11,7 +11,7 @@ function create_taxonomies() {
 	 		'post_types'	=>  'matter',		// Required
 	 	)
 	 );
-}
+}*/
 
 /* Programatically Register Taxonomies (*** DO NOT EDIT ***)
 ---------------------------------------------------------------------- */
