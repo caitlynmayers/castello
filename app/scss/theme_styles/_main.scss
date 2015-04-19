@@ -1,0 +1,28 @@
+/***
+
+Style Manager
+
+All styles you wish to include in your project should be called
+in this file. Any additions should be made below the Custom Stylesheets comment
+
+***/
+
+// Initialize Compass
+@import "compass";
+@import "compass/utilities";
+@import "compass/css3";
+
+// Initialize Bourbon & Neat
+@import "../../app/bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../app/bower_components/neat/app/assets/stylesheets/neat";
+
+// Set variables and mixins
+@import "config";
+
+// Style Reset
+@import "reset";
+
+// Custom stylesheets
+@import "global";
+@import "modules/header";
+@import "modules/footer";

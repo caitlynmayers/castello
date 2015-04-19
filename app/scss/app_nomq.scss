@@ -1,0 +1,10 @@
+/***
+
+Styles for Older Browsers (DO NOT EDIT)
+
+This file sets the variable for no media query support and builds 
+a css file that does not include media query references. 
+
+***/
+$no-mq-support: true;
+@import "theme_styles/main";
